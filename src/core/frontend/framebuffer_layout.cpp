@@ -194,8 +194,8 @@ FramebufferLayout LargeFrameLayout(u32 width, u32 height, bool swapped, bool upr
 
     Common::Rectangle<u32> screen_window_area{0, 0, width, height};
     Common::Rectangle<u32> total_rect = maxRectangle(screen_window_area, emulation_aspect_ratio);
-    Common::Rectangle<u32> large_screen = maxRectangle(total_rect, large_screen_aspect_ratio);
-    Common::Rectangle<u32> fourth_size_rect = total_rect.Scale(.25f);
+    Common::Rectangle<u32> large_screen = maxRectangle(total_rect.Scale(.95f), large_screen_aspect_ratio);
+    Common::Rectangle<u32> fourth_size_rect = total_rect.Scale(.315f);
     Common::Rectangle<u32> small_screen = maxRectangle(fourth_size_rect, small_screen_aspect_ratio);
 
     if (window_aspect_ratio < emulation_aspect_ratio) {

@@ -2366,9 +2366,9 @@ void GMainWindow::UpdateWindowTitle() {
     const QString full_name = QString::fromUtf8(Common::g_build_fullname);
 
     if (game_title.isEmpty()) {
-        setWindowTitle(tr("Citra %1").arg(full_name));
+        setWindowTitle(tr("Citra Pepe's build %1").arg(full_name));
     } else {
-        setWindowTitle(tr("Citra %1| %2").arg(full_name, game_title));
+        setWindowTitle(tr("Citra Pepe's build %1| %2").arg(full_name, game_title));
     }
 }
 
